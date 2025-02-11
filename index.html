@@ -110,16 +110,34 @@
 
 
   <!-- Buzón de sugerencias -->
+<!-- Buzón de sugerencias -->
 <section class="py-12" style="background-color: #1d6e1a;">
-    <div class="container mx-auto px-6 text-center">
-        <h2 class="text-3xl font-bold" style="color: #FAFAFA;">Buzón de Sugerencias</h2>
-        <p class="mt-4" style="color: #FAFAFA;">¿Tienes alguna sugerencia? ¡Nos encantaría escucharla!</p>
-        <a href="mailto:v.vilac@colegiounidadpedagogica.edu.co?subject=Sugerencia%20para%20Conexión%20C.U.P&body=Hola%2C%20me%20gustaría%20sugerir%20lo%20siguiente%3A" 
-           style="background-color: #FAFAFA; color: #1d6e1a; padding: 10px 20px; border-radius: 8px; display: inline-block; text-decoration: none; font-weight: bold;">
-            Enviar Sugerencia
-        </a>
-    </div>
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold" style="color: #FAFAFA;">Buzón de Sugerencias</h2>
+    <p class="mt-4" style="color: #FAFAFA;">¿Tienes alguna sugerencia? ¡Nos encantaría escucharla!</p>
+
+    <a href="mailto:v.vilac@colegiounidadpedagogica.edu.co"
+       style="background-color: #FAFAFA; color: #1d6e1a; padding: 10px 20px; border-radius: 8px; display: inline-block; text-decoration: none; font-weight: bold;">
+      Enviar Sugerencia
+    </a>
+
+    <p class="mt-4" style="color: #FAFAFA;">¿El botón no funciona? 
+      <button onclick="copyEmail()" style="text-decoration: underline; color: #FAFAFA; background: none; border: none; cursor: pointer;">
+        Haz clic aquí para copiar el correo.
+      </button>
+    </p>
+  </div>
 </section>
+
+<script>
+  function copyEmail() {
+    const email = "v.vilac@colegiounidadpedagogica.edu.co";
+    navigator.clipboard.writeText(email)
+      .then(() => alert("Correo copiado al portapapeles. Abre tu cliente de correo y pégalo."))
+      .catch(err => alert("No se pudo copiar el correo. Por favor intenta manualmente."));
+  }
+</script>
+
 
 
 </body>
