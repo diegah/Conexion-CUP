@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,37 +8,62 @@ body {
 }
 
 header {
-    background-color: #226ad9;
+    background-color: #1762d6;
     color: white;
-    padding: 20px;
-    font-size: 24px;
+    padding: 15px 0;
 }
 
-.gallery {
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos de la galería */
+.galeria {
     display: flex;
     flex-wrap: wrap;
+    gap: 15px;
     justify-content: center;
-    gap: 20px;
     padding: 20px;
 }
 
-.photo {
+figure {
     background: white;
-    border: 3px solid #226ad9;
     border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 10px;
-    max-width: 250px;
+    max-width: 220px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.photo img {
+figure:hover {
+    transform: scale(1.05);
+}
+
+figure img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
+    height: auto;
 }
 
-.photo p {
-    margin-top: 10px;
+figcaption {
+    font-size: 14px;
+    color: #333;
+    margin-top: 8px;
     font-weight: bold;
-    color: #226ad9;
+}
+
+/* Pie de página */
+footer {
+    background-color: #0073e6;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
 }
