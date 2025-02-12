@@ -1,79 +1,119 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
 }
 
-/* Header */
+/* Encabezado */
 header {
     background-color: #226ad9;
     color: white;
-    padding: 20px;
+    padding: 15px 0;
     text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 nav {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 10px;
+    margin-top: 10px;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    background-color: #1a5cb3;
 }
 
-/* Sección principal */
+/* Contenedor principal */
 main {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section {
-    background: white;
+    max-width: 1100px;
+    margin: 20px auto;
     padding: 20px;
-    margin: 20px;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 800px;
-    text-align: center;
 }
 
-.section h2 {
+/* Secciones */
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h2 {
     color: #226ad9;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 /* Botones */
-.button {
+button {
     background-color: #226ad9;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
+    transition: background 0.3s ease;
+    font-size: 1em;
 }
 
-.button:hover {
-    background-color: #1b54a3;
+button:hover {
+    background-color: #1a5cb3;
 }
 
-/* Pie de página */
-footer {
-    background-color: #333;
-    color: white;
+/* Galería */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.galeria figure {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background: white;
+    padding: 10px;
+}
+
+.galeria figure:hover {
+    transform: scale(1.05);
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+figcaption {
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #226ad9;
+    color: white;
+    margin-top: 30px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
 }
