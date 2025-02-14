@@ -9,6 +9,7 @@
     border: 1px solid #e2e8f0; /* Un borde suave */
     border-radius: 0.5rem; /* radius */
     overflow: hidden; /* Para que las imágenes no sobresalgan */
+  
 }
 
 .gallery .card:hover {
@@ -43,6 +44,7 @@ footer {
     padding: 1.5rem 0;
     text-align: center;
     font-size: 0.875rem;
+  
 }
 
 /* Estilos para el header */
@@ -77,3 +79,17 @@ header p {
 .cta-button:hover {
     background-color: #5a0606; /* Un tono más oscuro para el hover */
 }
+nav {
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
