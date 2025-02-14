@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos - Obra Escolar</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> <link rel="stylesheet" href="obra.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-color5">
+
+    <!-- Header -->
+    <header class="bg-color1 text-color5 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl font-bold">Galería de Fotos</h1>
+            <p class="mt-4">Recuerdos inolvidables de nuestra obra escolar</p>
+        </div>
+    </header>
+
+    <!-- Galería de Fotos -->
+    <section class="py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Ejemplo de imagen -->
+                <div class="card p-4 border rounded-lg shadow-lg">
+                    <img src="ruta/a/obra1.png" alt="Obra 1" class="w-full h-48 object-cover rounded-lg">
+                    <p class="mt-2 text-color1">Obra 1 - Descripción breve</p>
+                </div>
+                <!-- Repetir para otras imágenes -->
+                <div class="card p-4 border rounded-lg shadow-lg">
+                    <img src="ruta/a/obra2.png" alt="Obra 2" class="w-full h-48 object-cover rounded-lg">
+                    <p class="mt-2 text-color1">Obra 2 - Descripción breve</p>
+                </div>
+                <div class="card p-4 border rounded-lg shadow-lg">
+                    <img src="ruta/a/obra3.png" alt="Obra 3" class="w-full h-48 object-cover rounded-lg">
+                    <p class="mt-2 text-color1">Obra 3 - Descripción breve</p>
+                </div>
+                <!-- Añadir más imágenes según sea necesario -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-color1 text-color5 py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Colegio Unidad Pedagógica. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
