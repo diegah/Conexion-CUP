@@ -3,37 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla de Torneos</title>
+    <title>Torneos Deportivos</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Resultados y Posiciones del Torneo</h1>
+        <h1>Torneos Deportivos</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="album.html">Álbum</a>
+            <a href="torneo.html">Torneos Deportivos</a>
+        </nav>
     </header>
-    
+
     <main>
-        <section class="tabla-container">
+        <section class="tabla-torneo">
+            <h2>Tabla de Posiciones</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Pos</th>
+                        <th>Posición</th>
                         <th>Equipo</th>
-                        <th>PJ</th>
-                        <th>PG</th>
-                        <th>PE</th>
-                        <th>PP</th>
-                        <th>GF</th>
-                        <th>GC</th>
-                        <th>Pts</th>
+                        <th>Puntos</th>
+                        <th>Partidos Jugados</th>
+                        <th>Goles a Favor</th>
+                        <th>Goles en Contra</th>
                     </tr>
                 </thead>
-                <tbody id="tabla-torneo">
-                    <!-- Los datos se llenarán dinámicamente con JavaScript -->
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Equipo A</td>
+                        <td>9</td>
+                        <td>3</td>
+                        <td>10</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Equipo B</td>
+                        <td>6</td>
+                        <td>3</td>
+                        <td>8</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Equipo C</td>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>5</td>
+                        <td>7</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
     </main>
 
-    <script src="torneo.js"></script>
+    <footer>
+        <p>&copy; 2025 Conexión CUP - Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
